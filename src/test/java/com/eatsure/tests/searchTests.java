@@ -43,7 +43,7 @@ public class searchTests extends Base {
 	
 	public void verifySearchingNonExistingProduct()
 	{
-		
+		 
 	}
 
 }

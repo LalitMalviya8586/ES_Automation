@@ -112,21 +112,6 @@ public class landingPageTests extends Base{
 		landingPage.enterNotServiceableLocation();
 		landingPage.selectLocation();
 		
-		
-		/*
-		 * WebElement locationSearchBox =
-		 * driver.findElement(By.xpath("//input[@data-qa='locationTextBox']"));
-		 * locationSearchBox.sendKeys("Pali"); List<WebElement> resultList =
-		 * driver.findElements(By.xpath(
-		 * ".//ul[@data-qa='autoSuggestions']/child::li//span"));
-		 * System.out.println(resultList); Assert.assertTrue(resultList.size()>0,
-		 * "Location Search results found for invalid loaction!"); String
-		 * expectedLocation = "Pali";
-		 * 
-		 * for(WebElement result : resultList) {
-		 * if(result.getText().contains(expectedLocation)) {
-		 * //System.out.println(result.getText()); result.click(); break; } }
-		 */
 		driver.findElement(By.xpath("//button[normalize-space()='Confirm Location and Proceed']")).click();
 		Assert.assertTrue(driver.findElement(By.xpath("//div[@data-qa='notServiceableErrorHeading']")).isDisplayed(), "Location is servicable!");
 	}
