@@ -37,6 +37,13 @@ public class landingPage extends Base {
     @FindBy(id = "locationErrorMessage")
     private WebElement locationErrorMessage;
     
+    @FindBy(xpath = "//div[contains(text(),'New Location Detected')]")
+	private WebElement newLocationDetectedPopupText;
+	
+	@FindBy(xpath = "//div[contains(text(),'New Location Detected')]/parent::div/div[4]/child::button[2]")
+	private WebElement yesButtonFromNewLocationDetectedPopup;
+	
+    
     
     
     public void enterValidLocation()
@@ -72,6 +79,7 @@ public class landingPage extends Base {
     {
     	String validLocation = configReader.getProperty("validLocation");
     	String notServicableLocation = configReader.getProperty("notServicableLocation");
+    	
     	if(locationSearchResults.size()>=0)    
     	{
     		for(WebElement result : locationSearchResults)
@@ -82,6 +90,7 @@ public class landingPage extends Base {
     			if(resultText.contains(validLocation))
     			{
     				result.click();
+    				//commonMethods.waitForElementToBeClickable(yesButtonFromNewLocationDetectedPopup);
     				break;
     			}
     			else if(resultText.contains(notServicableLocation))
@@ -91,6 +100,7 @@ public class landingPage extends Base {
     			}
     		}
     	}
+    	commonMethods.normalWait(3);
     }
 	
 }

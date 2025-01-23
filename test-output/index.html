@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lalit\AppData\Local\Temp\testng-eclipse--1033277282\testng-customsuite.xml</span>
+                    <span>C:\Users\Lalit\AppData\Local\Temp\testng-eclipse--1939790326\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,35 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.eatsure.tests.searchTests" class="method navigator-link" hash-for-method="verifySearchListWithValidProduct">verifySearchListWithValidProduct</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Default_suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.eatsure.tests.searchTests" class="method navigator-link" hash-for-method="verifySearchIfValidProductMatchesAndClickOnit">verifySearchIfValidProductMatchesAndClickOnit</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,12 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.eatsure.tests.landingPageTests" class="method navigator-link" hash-for-method="verifyLocationSearchResulWithValidLocationSearch">verifyLocationSearchResulWithValidLocationSearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.eatsure.tests.landingPageTests" class="method navigator-link" hash-for-method="verifyValidLocationTakesUserToTheHome">verifyValidLocationTakesUserToTheHome</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.eatsure.tests.addProductTest" class="method navigator-link" hash-for-method="verifyAddingTheProductToTheCartFromPlp">verifyAddingTheProductToTheCartFromPlp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -151,149 +118,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.eatsure.tests.searchTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchListWithValidProduct">
-                  </a> <!-- verifySearchListWithValidProduct -->
-                  <span class="method-name">verifySearchListWithValidProduct</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //p[@data-qa=&apos;searchOption&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.eatsure.utilities.commonMethods.waitForElementToBeClickable(commonMethods.java:37)
-	at com.eatsure.utilities.commonMethods.clickElement(commonMethods.java:42)
-	at com.eatsure.pages.searchPage.clickOnSearch(searchPage.java:40)
-	at com.eatsure.tests.searchTests.verifySearchListWithValidProduct(searchTests.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@data-qa=&apos;searchOption&apos;]&quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [472cc53f217342df0beef65b460f2fb3, findElement {using=xpath, value=//p[@data-qa=&apos;searchOption&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Lalit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50970/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 472cc53f217342df0beef65b460f2fb3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 32 more
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.eatsure.tests.searchTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchIfValidProductMatchesAndClickOnit">
-                  </a> <!-- verifySearchIfValidProductMatchesAndClickOnit -->
-                  <span class="method-name">verifySearchIfValidProductMatchesAndClickOnit</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.eatsure.tests.searchTests.verifySearchIfValidProductMatchesAndClickOnit() on instance com.eatsure.tests.searchTests@5aa9e4eb depends on not successfully finished methods 
-[com.eatsure.tests.searchTests.verifySearchListWithValidProduct() on instance com.eatsure.tests.searchTests@5aa9e4eb]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.eatsure.tests.landingPageTests</span>
+              <span class="class-name">com.eatsure.tests.addProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLocationSearchResulWithValidLocationSearch">
-                  </a> <!-- verifyLocationSearchResulWithValidLocationSearch -->
-                  <span class="method-name">verifyLocationSearchResulWithValidLocationSearch</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyValidLocationTakesUserToTheHome">
-                  </a> <!-- verifyValidLocationTakesUserToTheHome -->
-                  <span class="method-name">verifyValidLocationTakesUserToTheHome</span>
+                  <a name="verifyAddingTheProductToTheCartFromPlp">
+                  </a> <!-- verifyAddingTheProductToTheCartFromPlp -->
+                  <span class="method-name">verifyAddingTheProductToTheCartFromPlp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,7 +136,7 @@ Session ID: 472cc53f217342df0beef65b460f2fb3
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lalit\AppData\Local\Temp\testng-eclipse--1033277282\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Lalit\AppData\Local\Temp\testng-eclipse--1939790326\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -310,18 +145,11 @@ Session ID: 472cc53f217342df0beef65b460f2fb3
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.eatsure.tests.landingPageTests&quot;&gt;
+      &lt;class name=&quot;com.eatsure.tests.addProductTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyValidLocationTakesUserToTheHome&quot;/&gt;
-          &lt;include name=&quot;verifyLocationSearchResulWithValidLocationSearch&quot;/&gt;
+          &lt;include name=&quot;verifyAddingTheProductToTheCartFromPlp&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.eatsure.tests.landingPageTests --&gt;
-      &lt;class name=&quot;com.eatsure.tests.searchTests&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifySearchListWithValidProduct&quot;/&gt;
-          &lt;include name=&quot;verifySearchIfValidProductMatchesAndClickOnit&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.eatsure.tests.searchTests --&gt;
+      &lt;/class&gt; &lt;!-- com.eatsure.tests.addProductTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -335,7 +163,7 @@ Session ID: 472cc53f217342df0beef65b460f2fb3
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (2 classes)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -345,26 +173,6 @@ Session ID: 472cc53f217342df0beef65b460f2fb3
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyLocationSearchResulWithValidLocationSearch</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifySearchIfValidProductMatchesAndClickOnit</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifySearchListWithValidProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyValidLocationTakesUserToTheHome</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -381,28 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySearchListWithValidProduct')
-data.setCell(0, 2, 'com.eatsure.tests.searchTests')
-data.setCell(0, 3, 15724);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyValidLocationTakesUserToTheHome')
-data.setCell(1, 2, 'com.eatsure.tests.landingPageTests')
-data.setCell(1, 3, 4808);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLocationSearchResulWithValidLocationSearch')
-data.setCell(2, 2, 'com.eatsure.tests.landingPageTests')
-data.setCell(2, 3, 1758);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySearchIfValidProductMatchesAndClickOnit')
-data.setCell(3, 2, 'com.eatsure.tests.searchTests')
-data.setCell(3, 3, 0);
+data.setCell(0, 1, 'verifyAddingTheProductToTheCartFromPlp')
+data.setCell(0, 2, 'com.eatsure.tests.addProductTest')
+data.setCell(0, 3, 53987);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -417,15 +213,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.eatsure.tests.landingPageTests</span>
+              <span class="ignored-class-name">com.eatsure.tests.addProductTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyNotServicableLocationSearch</span>
-                <br/>
-                <span class="ignored-method-name">verifyInValidLocationSearch</span>
+                <span class="ignored-method-name">verifyNavigetingToBrandPage</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -437,47 +231,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.eatsure.tests.landingPageTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.eatsure.tests.addProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">inittilizeBrowserAndOpenWebURL([TestResult name={null} status=CREATED method=landingPageTests.verifyLocationSearchResulWithValidLoc...)</span>
+                <span class="method-name">inittilizeBrowserAndOpenWebURL([TestResult name={null} status=CREATED method=addProductTest.verifyAddingTheProductToTheCartFromPlp(...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyLocationSearchResulWithValidLocationSearch</span>
-                <span class="method-start">3762 ms</span>
+                <span class="method-name">verifyAddingTheProductToTheCartFromPlp</span>
+                <span class="method-start">5109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=verifyLocationSearchResulWithValidLocationSearch status=SUCCESS method=landingPageT...)</span>
-                <span class="method-start">5522 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">inittilizeBrowserAndOpenWebURL([TestResult name={null} status=CREATED method=landingPageTests.verifyValidLocationTakesUserToTheHome...)</span>
-                <span class="method-start">5924 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyValidLocationTakesUserToTheHome</span>
-                <span class="method-start">8918 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=verifyValidLocationTakesUserToTheHome status=SUCCESS method=landingPageTests.verify...)</span>
-                <span class="method-start">13726 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.eatsure.tests.searchTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">inittilizeBrowserAndOpenWebURL([TestResult name={null} status=CREATED method=searchTests.verifySearchListWithValidProduct()[pri:0, ...)</span>
-                <span class="method-start">14037 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifySearchListWithValidProduct</span>
-                <span class="method-start">17167 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=verifySearchListWithValidProduct status=FAILURE method=searchTests.verifySearchList...)</span>
-                <span class="method-start">32907 ms</span>
+                <span class="method-name">teardown([TestResult name=verifyAddingTheProductToTheCartFromPlp status=SUCCESS method=addProductTest.verifyA...)</span>
+                <span class="method-start">59129 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

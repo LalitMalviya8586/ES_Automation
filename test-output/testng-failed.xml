@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.eatsure.tests.searchTests">
+      <class name="com.eatsure.tests.addProductTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifySearchListWithValidProduct"/>
-          <include name="verifySearchIfValidProductMatchesAndClickOnit"/>
           <include name="inittilizeBrowserAndOpenWebURL"/>
+          <include name="verifyAddingTheProductToTheCartFromPlp"/>
         </methods>
-      </class> <!-- com.eatsure.tests.searchTests -->
+      </class> <!-- com.eatsure.tests.addProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

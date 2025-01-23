@@ -26,9 +26,7 @@ public class landingPageTests extends Base{
 		boolean searchResult = landingPage.getSearchResult();
 		Assert.assertTrue(searchResult);
 		
-		//List<WebElement> resultList = driver.findElements(By.xpath("//ul[@data-qa='autoSuggestions']//li"));
 		
-		//Assert.assertTrue(resultList.size()>0, "Location Search results not visible!");
 		
 		/*
 		 * // Convert WebElement list to String list and clean up unwanted characters
