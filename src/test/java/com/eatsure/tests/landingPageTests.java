@@ -34,27 +34,12 @@ public class landingPageTests extends Base{
 	{
 		landingPage = new landingPage(driver);
 		landingPage.enterValidLocation();
-		//WebElement locationSearchBox = driver.findElement(By.xpath("//input[@data-qa='locationTextBox']"));
-		//locationSearchBox.sendKeys("Hsr Layout");
-		
+			
 		boolean searchResult = landingPage.getSearchResult();
 		Assert.assertTrue(searchResult);
 		
 		landingPage.selectLocation();
 		
-		/*
-		 * List<WebElement> resultList =
-		 * driver.findElements(By.xpath("//ul[@data-qa='autoSuggestions']//li"));
-		 * Assert.assertTrue(resultList.size()>0,
-		 * "Location Search results not visible!");
-		 * 
-		 * for(WebElement result : resultList) { // Replace all commas and hyphens with
-		 * whitespace and remove extra spaces String resultText =
-		 * result.getText().toLowerCase().replaceAll("[,-]", " ").replaceAll("\\s+",
-		 * " ").trim(); // Sanitize the result text
-		 * 
-		 * if(resultText.contains("hsr layout")) { result.click(); break; } }
-		 */
 		Thread.sleep(3000);
 		String homeTitle = driver.getTitle().toLowerCase();
 		Assert.assertTrue(homeTitle.contains("hsr layout"), "Title doesn't match the expected location!");
@@ -71,19 +56,6 @@ public class landingPageTests extends Base{
 		boolean searchResult = landingPage.isResultDisplayed();
 		Assert.assertFalse(searchResult);
 		
-		/*
-		 * //WebElement locationSearchBox =
-		 * driver.findElement(By.xpath("//input[@data-qa='locationTextBox']"));
-		 * //locationSearchBox.sendKeys("%(&^%(*&%&^(*"); List<WebElement> resultList =
-		 * driver.findElements(By.xpath("//ul[@data-qa='autoSuggestions']//li"));
-		 * 
-		 * Assert.assertFalse(resultList.size()>0,
-		 * "Location Search results found for invalid loaction!"); String
-		 * expectedLocation = "Pali"; //Boolean locationFound = false; for(WebElement
-		 * result : resultList) { if(result.getText().contains(expectedLocation)) {
-		 * //System.out.println(result.getText()); result.click(); //locationFound =
-		 * true; break; } }
-		 */
 	}
 	
 	
