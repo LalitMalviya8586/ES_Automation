@@ -7,7 +7,7 @@
         <methods>
           <include name="teardown"/>
           <include name="inittilizeBrowserAndOpenWebURL"/>
-          <include name="verifyAddingTheProductToTheCartFromPlp"/>
+          <include name="verifyNavigetingToBrandPage"/>
         </methods>
       </class> <!-- com.eatsure.tests.addProductTest -->
     </classes>

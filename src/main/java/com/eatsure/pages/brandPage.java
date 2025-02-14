@@ -2,7 +2,9 @@ package com.eatsure.pages;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,7 +37,7 @@ public class brandPage {
 	private List<WebElement> productCardList;
 	
 	@FindBy(xpath = "//div[@data-qa='productName']")
-	private List<WebElement> productName;
+	private List<WebElement> productNameList;
 	
 	@FindBy(xpath = "//div[@data-qa='productPricePlp']")
 	private WebElement productPricePlpList;
@@ -54,28 +56,76 @@ public class brandPage {
 	@FindBy(xpath = "//div[@data-qa = 'quantityToShow']")
 	private WebElement productQty;
 	
+	@FindBy(xpath = "//div[@data-qa='closeWindowPopup']")
+	private WebElement closePopupBtn;
+	
+	@FindBy(xpath = "//div[@data-qa='totalItemsInCart']")
+	private WebElement cartStripCount;
+	
+	@FindBy(xpath = "//button[@data-qa='ContinueButton']")
+	private WebElement viewCartStrip;
+	
+	@FindBy(xpath = "//div[@data-qa='totalItemsInCart']/following-sibling::div")
+	private WebElement priceOnCartStrip;
+	
+	
+	
 	public String getBrandPageTitle()
 	{
 		  String brand = brandName.getText();
 		  return brand;
 	}
 	
-	public void addNormalProduct() {
-	    
-		System.out.println(addButton.size());
-		
-		// Iterate through each Add button and click
-        for (int i = 0; i < addButton.size(); i++) {
-           commonMethods.clickElementUsingJavaScript(addButton.get(i));
-           commonMethods.waitForElementToBeClickable(productQty);
-           if(productQty.isDisplayed())
-           {
-        	   System.out.println("Normal product added");
-        	  break;
-           }
-           
-        }
-       
-        }
+	public Map<String, Object> addNormalProduct(String targetProductName) {
+	    Map<String, Object> result = new HashMap<>();
+	    String pQty = null;
+	    String pName = null;
 
+	    // Ensure product list is not empty
+	    if (!productNameList.isEmpty()) {
+	        // Get the first product name and compare
+	        pName = productNameList.get(0).getText();
+	        
+	        if (pName.equalsIgnoreCase(targetProductName)) {
+	            // Click "Add" button for the first product
+	            commonMethods.clickElementUsingJavaScript(addButton.get(0));
+
+	            // Wait and get the product details
+	            commonMethods.waitForElementToBeVisible(productQty);
+	            pQty = productQty.getText(); // Fetch product quantity from PLP
+
+	            // Verify if the quantity matches the cart strip count
+	            if (cartStripCount.getText().contains(pQty)) {
+	                System.out.println(pName + " (" + pQty + ") - Product added successfully!");
+	                result.put("productName", pName);
+	                result.put("productQty", pQty);
+	                return result;
+	            } else {
+	                System.out.println("Failed to verify product in cart.");
+	            }
+	        } else {
+	            System.out.println("First product (" + pName + ") does not match the desired product (" + targetProductName + ").");
+	        }
+	    } else {
+	        System.out.println("No products available to add.");
+	    }
+
+	    return null; // Return null if the product was not added
+	}
+	
+	
+	
+	public void increaseQty()
+	{
+		//addNormalProduct();
+		//commonMethods.clickElement(productQty);
+		
+	}
+
+	public void clickOnViewCart() {
+		commonMethods.clickElementUsingJavaScript(viewCartStrip);
+		
+	}
+	    
+		
 }

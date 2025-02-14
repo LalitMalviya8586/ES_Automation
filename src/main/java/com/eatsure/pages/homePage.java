@@ -50,7 +50,7 @@ public class homePage extends Base {
 			for(WebElement brand : brandList)
 			{
 				String brandName = brand.getText().toLowerCase();
-				if(brandName.equalsIgnoreCase("Pizzas"))
+				if(brandName.equalsIgnoreCase("Burger"))
 				{
 					commonMethods.clickElementUsingJavaScript(brand);
 					//commonMethods.clickElement(brand);

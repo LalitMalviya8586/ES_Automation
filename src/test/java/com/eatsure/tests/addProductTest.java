@@ -1,5 +1,7 @@
 package com.eatsure.tests;
 
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,7 +32,7 @@ public class addProductTest extends Base {
 	}
 	
 	@Test
-	public void verifyAddingTheProductToTheCartFromPlp()
+	public void verifyAddingProductToTheCartFromPlp()
 	{
 		landingPage = new landingPage(driver);
 		home = new homePage(driver);
@@ -40,8 +42,15 @@ public class addProductTest extends Base {
 		landingPage.enterValidLocation();
 		landingPage.selectLocation();
 		home.clickOnbrand();
-		brand.addNormalProduct();
-		
+		String targetProduct = "Red Velvet Mousse";
+		Map<String, Object> result = brand.addNormalProduct(targetProduct);
+		// Extract values from the returned Map 
+        //Boolean isProductAdded = (Boolean) result.get("isProductAdded");
+        String plpQty = (String) result.get("productQty"); // Quantity from PLP
+		String pName = (String) result.get("productName");// product name from PLP
+		System.out.println(plpQty);
+		System.out.println(pName);
+		//Assert.assertTrue(isProductAdded, "Qty did not match on cart strip");
 		
 	}
 }

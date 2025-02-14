@@ -1,32 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-20T18:01:16 IST" name="Default suite" finished-at="2025-01-20T18:02:16 IST" duration-ms="59610">
+  <suite started-at="2025-02-14T11:15:50 IST" name="Default suite" finished-at="2025-02-14T11:16:07 IST" duration-ms="17808">
     <groups>
     </groups>
-    <test started-at="2025-01-20T18:01:16 IST" name="Default test" finished-at="2025-01-20T18:02:16 IST" duration-ms="59610">
+    <test started-at="2025-02-14T11:15:50 IST" name="Default test" finished-at="2025-02-14T11:16:07 IST" duration-ms="17808">
       <class name="com.eatsure.tests.addProductTest">
-        <test-method is-config="true" signature="inittilizeBrowserAndOpenWebURL(org.testng.ITestResult)[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b]" started-at="2025-01-20T18:01:16 IST" name="inittilizeBrowserAndOpenWebURL" finished-at="2025-01-20T18:01:22 IST" duration-ms="5108" status="PASS">
+        <test-method is-config="true" signature="inittilizeBrowserAndOpenWebURL(org.testng.ITestResult)[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b]" started-at="2025-02-14T11:15:50 IST" name="inittilizeBrowserAndOpenWebURL" finished-at="2025-02-14T11:15:54 IST" duration-ms="4216" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=addProductTest.verifyAddingTheProductToTheCartFromPlp()[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=addProductTest.verifyNavigetingToBrandPage()[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inittilizeBrowserAndOpenWebURL -->
-        <test-method signature="verifyAddingTheProductToTheCartFromPlp()[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b]" started-at="2025-01-20T18:01:22 IST" name="verifyAddingTheProductToTheCartFromPlp" finished-at="2025-01-20T18:02:16 IST" duration-ms="53987" status="PASS">
+        <test-method signature="verifyNavigetingToBrandPage()[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b]" started-at="2025-02-14T11:15:54 IST" name="verifyNavigetingToBrandPage" finished-at="2025-02-14T11:16:07 IST" duration-ms="12895" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Brand name does not contain the expected brand name expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Brand name does not contain the expected brand name expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.eatsure.tests.addProductTest.verifyNavigetingToBrandPage(addProductTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddingTheProductToTheCartFromPlp -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b]" started-at="2025-01-20T18:02:16 IST" name="teardown" finished-at="2025-01-20T18:02:16 IST" duration-ms="438" status="PASS">
+        </test-method> <!-- verifyNavigetingToBrandPage -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b]" started-at="2025-02-14T11:16:07 IST" name="teardown" finished-at="2025-02-14T11:16:07 IST" duration-ms="660" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddingTheProductToTheCartFromPlp status=SUCCESS method=addProductTest.verifyAddingTheProductToTheCartFromPlp()[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNavigetingToBrandPage status=FAILURE method=addProductTest.verifyNavigetingToBrandPage()[pri:0, instance:com.eatsure.tests.addProductTest@3590fc5b] output={null}]]]>
               </value>
             </param>
           </params>

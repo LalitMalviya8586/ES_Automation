@@ -26,21 +26,6 @@ public class landingPageTests extends Base{
 		boolean searchResult = landingPage.getSearchResult();
 		Assert.assertTrue(searchResult);
 		
-		
-		
-		/*
-		 * // Convert WebElement list to String list and clean up unwanted characters
-		 * List<String> stringList = new ArrayList<>(); for (WebElement element :
-		 * resultList) { String locationText = element.getText(); if (locationText !=
-		 * null) { // Remove (, ), and - locationText =
-		 * locationText.toLowerCase().replaceAll("[()\\-]", "").replaceAll("\\s+",
-		 * " ").trim(); stringList.add(locationText); } }
-		 * 
-		 * // Print the cleaned-up String list
-		 * 
-		 * for (String str : stringList) { System.out.println(str); }
-		 */
-		 
 	}
 	
 	
